@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz nosso dia amor!</title>
+
+    <style>
+        body{
+            background-color: crimson;
+        }
+        .painel{
+            margin: auto;
+            background-color: hotpink;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sim{
+            height: 40px;
+            width: 70px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 70px;
+            background-color: red;
+            border:2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="painel">
+
+    <h1>❤️Feliz nosso dia amor!! 27/04 ❤️</h1>
+
+    <h2>Aceita sair comigo para uma tarde romântica cheia de amor e corações e carinhos?</h2>
+    
+    
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgifman.net%2Fgifs-fofos%2Fgifs-de-ursinhos-fofos-carinhosos-e-apaixonados%2F&psig=AOvVaw0lBTyPJiGJ0Quyjx2Ud9RB&ust=1714071668086000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiVodrE24UDFQAAAAAdAAAAABAZ" alt="">
+    
+    <a href="https://i.pinimg.com/originals/6f/00/57/6f0057f4c2c39417e90ba8569c2da359.gif"><button id="sim">SIM</button></a>
+    <button onmouseover="fuja()" id="nao">NAO</button>
+
+
+    </div>
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeigth;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+    </script>
+
+
+
+
+</body>
+</html>
